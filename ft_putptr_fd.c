@@ -45,7 +45,7 @@ int	ft_putptr_fd(void *ptr, int fd)
 	int	start_print;
 
 	if (!ptr)
-		return (write(fd, "(nil)", 5));
+		return (write(fd, "0x0", 3));
 	init(&digit, &result, &start_print);
 	if (ft_putchar_fd('0', fd) == -1)
 		return (-1);
